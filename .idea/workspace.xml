@@ -90,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602344642058</updated>
-      <workItem from="1602344643845" duration="7360000" />
+      <workItem from="1602344643845" duration="7906000" />
     </task>
     <servers />
   </component>
@@ -102,22 +102,22 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="804" y="296" key="FileChooserDialogImpl/-1931.1452.1536.824/0.0.2048.1112/-1920.372.1920.1040@0.0.2048.1112" timestamp="1602345831714" />
-    <state width="2005" height="305" key="GridCell.Tab.0.bottom" timestamp="1602350423888">
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom" timestamp="1602354126479">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.bottom/-1931.1452.1536.824/0.0.2048.1112/-1920.372.1920.1040@0.0.2048.1112" timestamp="1602350423888" />
-    <state width="2005" height="305" key="GridCell.Tab.0.center" timestamp="1602350423888">
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom/-1931.1452.1536.824/0.0.2048.1112/-1920.372.1920.1040@0.0.2048.1112" timestamp="1602354126479" />
+    <state width="2005" height="305" key="GridCell.Tab.0.center" timestamp="1602354126479">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.center/-1931.1452.1536.824/0.0.2048.1112/-1920.372.1920.1040@0.0.2048.1112" timestamp="1602350423888" />
-    <state width="2005" height="305" key="GridCell.Tab.0.left" timestamp="1602350423888">
+    <state width="2005" height="305" key="GridCell.Tab.0.center/-1931.1452.1536.824/0.0.2048.1112/-1920.372.1920.1040@0.0.2048.1112" timestamp="1602354126479" />
+    <state width="2005" height="305" key="GridCell.Tab.0.left" timestamp="1602354126479">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.left/-1931.1452.1536.824/0.0.2048.1112/-1920.372.1920.1040@0.0.2048.1112" timestamp="1602350423888" />
-    <state width="2005" height="305" key="GridCell.Tab.0.right" timestamp="1602350423888">
+    <state width="2005" height="305" key="GridCell.Tab.0.left/-1931.1452.1536.824/0.0.2048.1112/-1920.372.1920.1040@0.0.2048.1112" timestamp="1602354126479" />
+    <state width="2005" height="305" key="GridCell.Tab.0.right" timestamp="1602354126479">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.right/-1931.1452.1536.824/0.0.2048.1112/-1920.372.1920.1040@0.0.2048.1112" timestamp="1602350423888" />
+    <state width="2005" height="305" key="GridCell.Tab.0.right/-1931.1452.1536.824/0.0.2048.1112/-1920.372.1920.1040@0.0.2048.1112" timestamp="1602354126479" />
     <state x="538" y="266" key="SettingsEditor" timestamp="1602345852383">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -129,6 +129,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/animalface$test.coverage" NAME="test Coverage Results" MODIFIED="1602345626936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/animalface$google.coverage" NAME="google_image_crawler Coverage Results" MODIFIED="1602350423880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium" />
+    <SUITE FILE_PATH="coverage/animalface$google.coverage" NAME="google_image_crawler Coverage Results" MODIFIED="1602354126470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium" />
   </component>
 </project>

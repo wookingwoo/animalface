@@ -19,13 +19,15 @@ if not os.path.exists('./crawling_data/'):
 
 for people_index in range(len(people_list)):
 
+    start_person_time = time.time()
+
     driver = webdriver.Chrome('./ChromeDriver/chromedriver_win32/chromedriver.exe')
     driver.get("https://www.google.co.kr/imghp?hl=ko&tab=wi&authuser=0&ogbl")
     elem = driver.find_element_by_name("q")
 
     print(people_list[people_index], "크롤링을 시작합니다.")
-    print("현재 실행 시간: %s seconds" % (time.time() - start_time))
-    print("진행 현황:", round(((people_index + 1)/len(people_list))*100, 2) ,"(", people_index + 1, "/", len(people_list), ")")
+    print("현재 실행 시간: %s seconds" % round((time.time() - start_time),2))
+    print("진행 현황:", round(((people_index + 1)/len(people_list))*100, 2), "%" ,"(", people_index + 1, "명 /", len(people_list), "명 )")
 
     people_img_path = './crawling_data/' + people_list[people_index]
 
@@ -55,6 +57,7 @@ for people_index in range(len(people_list)):
 
     images = driver.find_elements_by_css_selector(".rg_i.Q4LuWd")  # 썸네일 이미지
     count = 1
+    print(people_list[people_index], "다운 현황:", end=" ")
     for image in images:
         try:
             image.click()  # 썸네일 이미지 클릭
@@ -69,14 +72,19 @@ for people_index in range(len(people_list)):
                                   'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1941.0 Safari/537.36')]
             urllib.request.install_opener(opener)
             urllib.request.urlretrieve(imgUrl, people_img_path + "/" + str(count) + ".jpg")  # 이미지 저장
+            print(count, end=", ")
+
             count = count + 1
 
             if count == 51:
                 break
         except:
             pass  # 크롤링중 오류난 사진은 패스
+    print("/", end=" ")
 
     driver.close()
+    print("%s seconds" % round((time.time() - start_person_time), 2))
+
 
 print("크롤링을 성공적으로 모두 마치고 종료합니다.")
 print("크롤링 이미지 수:", count)
