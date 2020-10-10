@@ -4,10 +4,10 @@
 ## 설치 안내 (Installation Process)
 
 
-### install library
+### install python library
 
 
-install bs4
+- install bs4
 
 ```bash
 pip install bs4
@@ -15,7 +15,7 @@ pip install bs4
 
 
 
-
+- install google_images_download
 
 Python Script for ‘searching’ and ‘downloading’ hundreds of Google images to the local hard disk!
 
@@ -25,6 +25,12 @@ pip install google_images_download
 
 Information: https://pypi.org/project/google_images_download/
 
+
+- install selenium
+
+```bash
+pip install selenium
+```
 
 
 ## 가상 환경 만들기
@@ -39,6 +45,9 @@ python -m venv selenium
 
 ## 가상 환경 실행
 
+- 가상환경 내에서 패키지들을 설치, 실행 가능
+- 다른 프로젝트들과 독립적인 공간에서 개발환경 구성 가능
+
 리눅스 환경:
 
 ```bash
@@ -50,4 +59,20 @@ source selenium/bin/activate
 ```bash
 cd selenium\Scripts
 activate
+```
+
+
+## ChromeDriver - WebDriver for Chrome
+
+- version
+```bash
+ChromeDriver: 86.0.4240.22
+```
+```bash
+Supports Chrome version 86
+```
+
+- 크롬드라이버 다운로드 링크
+```bash
+https://chromedriver.chromium.org/downloads
 ```
