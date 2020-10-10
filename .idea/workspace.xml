@@ -28,8 +28,8 @@
       <recent name="C:\Users\WooJeongHeon\Desktop\github\animalface\selenium" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.google">
-    <configuration name="google" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.google_image_crawler">
+    <configuration name="google_image_crawler" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="animalface" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -42,7 +42,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/selenium/google.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\WooJeongHeon\Desktop\github\animalface\selenium\google_image_crawler.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -75,7 +75,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.google" />
+        <item itemvalue="Python.google_image_crawler" />
         <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
@@ -90,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602344642058</updated>
-      <workItem from="1602344643845" duration="1502000" />
+      <workItem from="1602344643845" duration="3436000" />
     </task>
     <servers />
   </component>
@@ -102,22 +102,22 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="804" y="296" key="FileChooserDialogImpl/-1931.1452.1536.824/0.0.2048.1112/-1920.372.1920.1040@0.0.2048.1112" timestamp="1602345831714" />
-    <state width="2005" height="305" key="GridCell.Tab.0.bottom" timestamp="1602346119291">
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom" timestamp="1602347611176">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.bottom/-1931.1452.1536.824/0.0.2048.1112/-1920.372.1920.1040@0.0.2048.1112" timestamp="1602346119291" />
-    <state width="2005" height="305" key="GridCell.Tab.0.center" timestamp="1602346119290">
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom/-1931.1452.1536.824/0.0.2048.1112/-1920.372.1920.1040@0.0.2048.1112" timestamp="1602347611176" />
+    <state width="2005" height="305" key="GridCell.Tab.0.center" timestamp="1602347611176">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.center/-1931.1452.1536.824/0.0.2048.1112/-1920.372.1920.1040@0.0.2048.1112" timestamp="1602346119290" />
-    <state width="2005" height="305" key="GridCell.Tab.0.left" timestamp="1602346119290">
+    <state width="2005" height="305" key="GridCell.Tab.0.center/-1931.1452.1536.824/0.0.2048.1112/-1920.372.1920.1040@0.0.2048.1112" timestamp="1602347611176" />
+    <state width="2005" height="305" key="GridCell.Tab.0.left" timestamp="1602347611176">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.left/-1931.1452.1536.824/0.0.2048.1112/-1920.372.1920.1040@0.0.2048.1112" timestamp="1602346119290" />
-    <state width="2005" height="305" key="GridCell.Tab.0.right" timestamp="1602346119290">
+    <state width="2005" height="305" key="GridCell.Tab.0.left/-1931.1452.1536.824/0.0.2048.1112/-1920.372.1920.1040@0.0.2048.1112" timestamp="1602347611176" />
+    <state width="2005" height="305" key="GridCell.Tab.0.right" timestamp="1602347611176">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.right/-1931.1452.1536.824/0.0.2048.1112/-1920.372.1920.1040@0.0.2048.1112" timestamp="1602346119290" />
+    <state width="2005" height="305" key="GridCell.Tab.0.right/-1931.1452.1536.824/0.0.2048.1112/-1920.372.1920.1040@0.0.2048.1112" timestamp="1602347611176" />
     <state x="538" y="266" key="SettingsEditor" timestamp="1602345852383">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -129,6 +129,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/animalface$test.coverage" NAME="test Coverage Results" MODIFIED="1602345626936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/animalface$google.coverage" NAME="google Coverage Results" MODIFIED="1602346119283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium" />
+    <SUITE FILE_PATH="coverage/animalface$google.coverage" NAME="google Coverage Results" MODIFIED="1602347611169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium" />
   </component>
 </project>
