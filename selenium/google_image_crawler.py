@@ -3,12 +3,16 @@ from selenium.webdriver.common.keys import Keys
 import time
 import urllib.request
 import os
+import math
 
 start_time = time.time()
 
-people_list = [
-    "워너원 강다니엘", "엑소 백현", "박보검", "송중기", "워너원 황민현", "엑소 시우민", "강동원", "이종석", "이준기", "마동석",
-    "조진웅", "조세호", "안재홍", "윤두준", "이민기", "김우빈", "육성재", "공유", "방탄소년단 정국", "아이콘 바비", "워너원 박지훈", "엑소 수호"]
+people_list = ["방탄소년단 정국", "아이콘 바비", "워너원 박지훈", "엑소 수호",
+               "한지민", "박보영", "윤승아", "한가인",
+               "유인영", "차예련", "경리", "안소희",
+               "이연희", "설현", "윤아", "고아라",
+               "수지", "성유리", "트와이스 나연", "트와이스 다현",
+               ]
 
 if not os.path.exists('./crawling_data/'):
     os.makedirs('./crawling_data/')
@@ -20,6 +24,8 @@ for people_index in range(len(people_list)):
     elem = driver.find_element_by_name("q")
 
     print(people_list[people_index], "크롤링을 시작합니다.")
+    print("현재 실행 시간: %s seconds" % (time.time() - start_time))
+    print("진행 현황:", round(((people_index + 1)/len(people_list))*100, 2) ,"(", people_index + 1, "/", len(people_list), ")")
 
     people_img_path = './crawling_data/' + people_list[people_index]
 
@@ -65,7 +71,7 @@ for people_index in range(len(people_list)):
             urllib.request.urlretrieve(imgUrl, people_img_path + "/" + str(count) + ".jpg")  # 이미지 저장
             count = count + 1
 
-            if count == 10:
+            if count == 51:
                 break
         except:
             pass  # 크롤링중 오류난 사진은 패스
@@ -74,4 +80,4 @@ for people_index in range(len(people_list)):
 
 print("크롤링을 성공적으로 모두 마치고 종료합니다.")
 print("크롤링 이미지 수:", count)
-print("크롤링 시간: %s seconds" % (time.time() - start_time))
+print("최종 크롤링 시간: %s seconds" % (time.time() - start_time))
