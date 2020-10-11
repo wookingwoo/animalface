@@ -3,19 +3,31 @@ from selenium.webdriver.common.keys import Keys
 import time
 import urllib.request
 import os
-import math
+import datetime
 
 start_time = time.time()
 
-people_list = ["방탄소년단 정국", "아이콘 바비", "워너원 박지훈", "엑소 수호",
-               "한지민", "박보영", "윤승아", "한가인",
-               "유인영", "차예련", "경리", "안소희",
-               "이연희", "설현", "윤아", "고아라",
-               "수지", "성유리", "트와이스 나연", "트와이스 다현",
+people_list = ["강아지상 여자 연예인",
+               "고양이상 여자 연예인",
+               "사슴상 여자 연예인",
+               "토끼상 여자 연예인",
+               "강아지상 남자 연예인",
+               "고양이상 남자 연예인",
+               "곰상 남자 연예인",
+               "공룡상 남자 연예인",
+               "토끼상 남자 연예인",
                ]
 
 if not os.path.exists('./crawling_data/'):
     os.makedirs('./crawling_data/')
+    print('./crawling_data/' + "폴더가 없어 새로 생성하였습니다.")
+
+now = datetime.datetime.now()
+nowDatetime = now.strftime('%Y.%m.%d_%Hh%Mm%Ss')  # 2020.10.11_14h00m53s
+
+if not os.path.exists('./crawling_data/' + nowDatetime):
+    os.makedirs('./crawling_data/' + nowDatetime)
+    print('./crawling_data/' + nowDatetime + "폴더가 없어 새로 생성하였습니다.")
 
 for people_index in range(len(people_list)):
 
@@ -26,10 +38,11 @@ for people_index in range(len(people_list)):
     elem = driver.find_element_by_name("q")
 
     print(people_list[people_index], "크롤링을 시작합니다.")
-    print("현재 실행 시간: %s seconds" % round((time.time() - start_time),2))
-    print("진행 현황:", round(((people_index + 1)/len(people_list))*100, 2), "%" ,"(", people_index + 1, "명 /", len(people_list), "명 )")
+    print("현재 실행 시간: %s seconds" % round((time.time() - start_time), 2))
+    print("진행 현황:", round(((people_index + 1) / len(people_list)) * 100, 2), "%", "(", people_index + 1, "명 /",
+          len(people_list), "명 )")
 
-    people_img_path = './crawling_data/' + people_list[people_index]
+    people_img_path = './crawling_data/' + nowDatetime + "/" + people_list[people_index]
 
     if not os.path.exists(people_img_path):
         os.makedirs(people_img_path)
@@ -76,15 +89,14 @@ for people_index in range(len(people_list)):
 
             count = count + 1
 
-            if count == 51:
-                break
+            # if count ==51:
+            #     break
         except:
             pass  # 크롤링중 오류난 사진은 패스
     print("/", end=" ")
 
     driver.close()
     print("%s seconds" % round((time.time() - start_person_time), 2))
-
 
 print("크롤링을 성공적으로 모두 마치고 종료합니다.")
 print("크롤링 이미지 수:", count)
