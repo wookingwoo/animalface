@@ -20,9 +20,14 @@ dur2 = [2]
 mel3 = ['D5', 'D5', 'D5']
 dur3 = [4, 4, 4]
 
+mel4 = ['do']
+dur4 = [2]
+
 music_domisol = zip(mel, dur)
 music_sol = zip(mel2, dur2)
 music_re5 = zip(mel3, dur3)
+music_do = zip(mel4, dur4)
+
 
 # 멜로디 모듈 끝
 
@@ -70,6 +75,11 @@ for people_index in range(len(people_list)):
     while True:
         # Scroll down to bottom
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")  # 스크롤을 내림
+        music_do = zip(mel4, dur4)
+        for melody, duration in music_do:
+            winsound.Beep(so1[melody], 1000 // duration)
+
+
         # Wait to load page
         time.sleep(SCROLL_PAUSE_TIME)
         # Calculate new scroll height and compare with last scroll height
