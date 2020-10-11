@@ -8,36 +8,29 @@ import winsound
 
 
 def mel_sound():  # 도,레,미,파,솔,라,시 Hz
-    so1 = {'do': 261, 're': 293, 'mi': 329, 'pa': 349, 'sol': 391, 'ra': 440, 'si': 493, 'do5': 523}
+    so1 = {'do': 261, 're': 293, 'mi': 329, 'pa': 349, 'sol': 391, 'ra': 440, 'si': 493, 'do5': 523, 'D5': 587}
 
     mel = ['do', 'mi', 'sol', ]
-    dur = [3,3,3,]
+    dur = [3, 3, 3, ]
 
     mel2 = ['sol', ]
     dur2 = [2]
 
+    mel3 = ['D5', 'D5', 'D5', 'D5', 'D5', ]
+    dur3 = [4, 4, 4, 4, 4, ]
 
-    music = zip(mel, dur)
-    music2 = zip(mel2, dur2)
+    music_domisol = zip(mel, dur)
+    music_sol = zip(mel2, dur2)
+    music_re5 = zip(mel3, dur3)
 
-    for melody, duration in music:
+    for melody, duration in music_domisol:
         winsound.Beep(so1[melody], 1000 // duration)
 
-    for melody, duration in music2:
+    for melody, duration in music_sol:
         winsound.Beep(so1[melody], 1000 // duration)
 
-    winsound.Beep(600, 250)
-    winsound.Beep(600, 250)
-    winsound.Beep(600, 250)
-    winsound.Beep(600, 250)
-    winsound.Beep(600, 250)
-    winsound.Beep(600, 250)
-
-
-
-
-
-
+    for melody, duration in music_re5:
+        winsound.Beep(so1[melody], 1000 // duration)
 
 
 mel_sound()
