@@ -112,8 +112,8 @@ for people_index in range(len(people_list)):
             for melody, duration in music_sol:
                 winsound.Beep(so1[melody], 1000 // duration)
 
-            if count ==6:
-                break
+            # if count ==6: # 다운로드할 이미지수 (-1)
+            #     break
         except:
             for melody, duration in music_re5:
                 winsound.Beep(so1[melody], 1000 // duration)
