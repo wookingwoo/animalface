@@ -14,7 +14,7 @@ so1 = {'do': 261, 're': 293, 'mi': 329, 'pa': 349, 'sol': 391, 'ra': 440, 'si': 
 mel = ['do', 'mi', 'sol', ]
 dur = [3, 3, 3, ]
 
-mel2 = ['sol', ]
+mel2 = ['sol']
 dur2 = [2]
 
 mel3 = ['D5', 'D5', 'D5']
@@ -27,16 +27,9 @@ music_re5 = zip(mel3, dur3)
 # 멜로디 모듈 끝
 
 
-people_list = ["강아지상 여자 연예인",
-               "고양이상 여자 연예인",
-               "사슴상 여자 연예인",
-               "토끼상 여자 연예인",
-               "강아지상 남자 연예인",
-               "고양이상 남자 연예인",
-               "곰상 남자 연예인",
-               "공룡상 남자 연예인",
-               "토끼상 남자 연예인",
-               ]
+people_list = [
+"강아지", "고양이"
+]
 
 if not os.path.exists('./crawling_data/'):
     os.makedirs('./crawling_data/')
@@ -109,12 +102,14 @@ for people_index in range(len(people_list)):
 
             count = count + 1
 
+            music_sol = zip(mel2, dur2)
             for melody, duration in music_sol:
                 winsound.Beep(so1[melody], 1000 // duration)
 
-            # if count ==6: # 다운로드할 이미지수 (-1)
+            # if count == 201:  # 다운로드할 이미지수 (-1)
             #     break
         except:
+            music_re5 = zip(mel3, dur3)
             for melody, duration in music_re5:
                 winsound.Beep(so1[melody], 1000 // duration)
             pass  # 크롤링중 오류난 사진은 패스
@@ -123,6 +118,7 @@ for people_index in range(len(people_list)):
     driver.close()
     print("%s seconds" % round((time.time() - start_person_time), 2))
 
+    music_domisol = zip(mel, dur)
     for melody, duration in music_domisol:
         winsound.Beep(so1[melody], 1000 // duration)
 
