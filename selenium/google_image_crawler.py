@@ -23,17 +23,24 @@ dur3 = [4, 4, 4]
 mel4 = ['do']
 dur4 = [2]
 
+mel5 = ['pa']
+dur5 = [2]
+
+mel6 = ['sol', 'mi']
+dur6 = [4, 4]
+
 music_domisol = zip(mel, dur)
 music_sol = zip(mel2, dur2)
 music_re5 = zip(mel3, dur3)
 music_do = zip(mel4, dur4)
-
+music_pa = zip(mel5, dur5)
+music_solmi = zip(mel6, dur6)
 
 # 멜로디 모듈 끝
 
 
 people_list = [
-"강아지", "고양이"
+     "cat", "dog",
 ]
 
 if not os.path.exists('./crawling_data/'):
@@ -79,15 +86,24 @@ for people_index in range(len(people_list)):
         for melody, duration in music_do:
             winsound.Beep(so1[melody], 1000 // duration)
 
-
         # Wait to load page
         time.sleep(SCROLL_PAUSE_TIME)
+        time.sleep(2)  # 2초 여유 휴식
         # Calculate new scroll height and compare with last scroll height
         new_height = driver.execute_script("return document.body.scrollHeight")  # 스크롤 높이
         if new_height == last_height:  # 이전스크롤 높이와 현재 스크롤 높이가 같으면 (스크롤이 끝가지 다 내려가면, 더이상 스크롤이 안되면)
             try:
                 driver.find_element_by_css_selector(".mye4qd").click()  # 구글에서 이미지 더보기 클릭
+                music_pa = zip(mel5, dur5)
+                for melody, duration in music_pa:
+                    winsound.Beep(so1[melody], 1000 // duration)
+
+                time.sleep(2)  # 2초 여유 휴식
             except:
+                music_solmi = zip(mel6, dur6)
+                for melody, duration in music_solmi:
+                    winsound.Beep(so1[melody], 1000 // duration)
+
                 break  # 이미지더보기 버튼이 없는경우 무한루프 탈출
         last_height = new_height
 
