@@ -17,6 +17,7 @@
 
   <div>Teachable Machine Image Model</div>
   <button type="button" onclick="init()">Start</button>
+  <button type="button" onclick="predict()">시작하기</button>
 
 
 
@@ -34,7 +35,7 @@
       </div>
     </div>
     <div class="file-upload-content">
-      <img class="file-upload-image" src="#" alt="your image" />
+      <img class="file-upload-image" id="face-image" src="#" alt="your image" />
       <div class="image-title-wrap">
         <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
       </div>
@@ -52,7 +53,7 @@
 
 
 
-<!-- image upload javascript -->
+  <!-- image upload javascript -->
   <script>
     function readURL(input) {
       if (input.files && input.files[0]) {
@@ -114,31 +115,22 @@
       model = await tmImage.load(modelURL, metadataURL);
       maxPredictions = model.getTotalClasses();
 
-      // Convenience function to setup a webcam
-      const flip = true; // whether to flip the webcam
-      webcam = new tmImage.Webcam(200, 200, flip); // width, height, flip
-      await webcam.setup(); // request access to the webcam
-      await webcam.play();
-      window.requestAnimationFrame(loop);
 
-      // append elements to the DOM
-      document.getElementById("webcam-container").appendChild(webcam.canvas);
+
       labelContainer = document.getElementById("label-container");
       for (let i = 0; i < maxPredictions; i++) { // and class labels
         labelContainer.appendChild(document.createElement("div"));
       }
     }
 
-    async function loop() {
-      webcam.update(); // update the webcam frame
-      await predict();
-      window.requestAnimationFrame(loop);
-    }
+
 
     // run the webcam image through the image model
     async function predict() {
       // predict can take in an image, video or canvas html element
-      const prediction = await model.predict(webcam.canvas);
+      var image = document.getElementById("face-image")
+      const prediction = await model.predict(image, false);
+
       for (let i = 0; i < maxPredictions; i++) {
         const classPrediction =
           prediction[i].className + ": " + prediction[i].probability.toFixed(2);
