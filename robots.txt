@@ -1,0 +1,4 @@
+User-Agent:*
+Allow: /
+
+Sitemap: https://animalface.wookingwoo.com/sitemap.xml
