@@ -1,4 +1,4 @@
 data/*
-selenium/crawling_data/*
-test_img/*
-selenium/good_data/*
+crawler/selenium/crawling_data/*
+crawler/test_img/*
+crawler/selenium/good_data/*
