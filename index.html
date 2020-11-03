@@ -191,6 +191,8 @@
       window.location.reload();
     }
   </script>
+
+  <!-- DISQUS -->
   <script>
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document,
@@ -221,7 +223,7 @@
         };
         reader.readAsDataURL(input.files[0]);
         init().then(function() {
-          console.log("hello");
+          console.log("init 실행");
           predict();
           $('#loading').hide();
         });
