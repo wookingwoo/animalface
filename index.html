@@ -37,7 +37,7 @@
 
 <body>
   <nav class="p-3 container navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="https://animalface.site/">동물상 테스트</a>
+    <a class="navbar-brand" href="https://animalface.wookingwoo.com">동물상 테스트</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -50,6 +50,8 @@
         </li>
         <li class="nav-item active" onclick="gtag('event', '조코딩 유튜브 클릭', {'event_category': '조코딩 유튜브 클릭','event_label': '상단 메뉴'});">
           <a class="nav-link" id="yotube-top-link" href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg">제작 도움: 조코딩 유튜브 채널</a>
+          <!-- <a class="nav-link" id="yotube-top-link" href="https://wookingwoo.com">우킹우닷컴</a> -->
+
         </li>
       </ul>
     </div>
@@ -223,7 +225,7 @@
         };
         reader.readAsDataURL(input.files[0]);
         init().then(function() {
-          console.log("init 실행");
+          console.log("init 실행 완료");
           predict();
           $('#loading').hide();
         });
