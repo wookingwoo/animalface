@@ -1,7 +1,7 @@
 # animalface
 
 
-## 설치 안내 (Installation Process)
+## 파이썬 크롤러 설치 안내 (Installation Process)
 
 
 ### install python library
@@ -75,4 +75,13 @@ Supports Chrome version 86
 - 크롬드라이버 다운로드 링크
 ```bash
 https://chromedriver.chromium.org/downloads
+```
+
+
+## React Native, Expo 설치 안내 (Installation Process)
+
+
+
+```bash
+expo install react-native-webview
 ```
