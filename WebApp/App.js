@@ -6,3 +6,6 @@ export default class App extends React.Component {
     return <WebView source={{ uri: 'https://animalface.wookingwoo.com' }} style={{ marginTop: 20 }} />;
   }
 }
+
+
+// test
