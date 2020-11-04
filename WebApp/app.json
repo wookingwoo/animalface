@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "동물상 테스트",
-    "slug": "animalfaceAPP",
+    "name": "animalface",
+    "slug": "animalface",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,42 +16,27 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-
-
+    "ios": {
+      "supportsTablet": true,
+        
+         "bundleIdentifier": "com.wookingwoo.animalface",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+        
+              "package": "com.wookingwoo.animalface",
+      "versionCode": 1
+        
+    },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "packagerOpts": {
       "port": 58294
-    },
-      
-      
-      {
-   "expo": {
-    "name": "Your App Name",
-    "icon": "./path/to/your/app-icon.png",
-    "version": "1.0.0",
-    "slug": "your-app-slug",
-    "ios": {
-            "supportsTablet": true,
-
-      "bundleIdentifier": "com.wookingwoo.animalface",
-      "buildNumber": "1.0.0"
-    },
-    "android": {
-        
-              "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-        
-      "package": "com.wookingwoo.animalface",
-      "versionCode": 1
     }
-   }
- }
-
-
-
   }
 }

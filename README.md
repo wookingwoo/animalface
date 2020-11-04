@@ -101,4 +101,17 @@ npm install -g expo-cli
 
 When you are creating an app that requires access to potentially sensitive information on a user's device, such as their location or contacts, you need to ask for the user's permission first. The expo-permissions module makes requesting these permissions easy, fast, and reliable.
 
+```bash
 expo install expo-permissions
+```
+
+## icon, splash size
+
+
+### icon.png size
+
+1024x1024 is a good size. The Expo build service will generate the other sizes for you. The largest size it generates is 1024x1024.
+
+### splash.png size
+
+I'll go with 1242 pixels wide and 2436 pixels tall -- this is the width of the iPhone 8 Plus (the widest iPhone) and the height of the iPhone X (the tallest iPhone)
