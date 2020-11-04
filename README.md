@@ -85,3 +85,20 @@ https://chromedriver.chromium.org/downloads
 ```bash
 expo install react-native-webview
 ```
+
+
+### Install Expo CLI
+
+Expo CLI is the tool for developing and building Expo apps.
+
+```bash
+npm install -g expo-cli
+```
+
+
+### expo-permissions module
+
+
+When you are creating an app that requires access to potentially sensitive information on a user's device, such as their location or contacts, you need to ask for the user's permission first. The expo-permissions module makes requesting these permissions easy, fast, and reliable.
+
+expo install expo-permissions
