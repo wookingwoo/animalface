@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "animalfaceAPP3",
-    "slug": "animalfaceAPP3",
+    "name": "동물상 테스트",
+    "slug": "animalfaceAPP",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
