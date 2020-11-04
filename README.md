@@ -115,3 +115,16 @@ expo install expo-permissions
 ### splash.png size
 
 I'll go with 1242 pixels wide and 2436 pixels tall -- this is the width of the iPhone 8 Plus (the widest iPhone) and the height of the iPhone X (the tallest iPhone)
+
+
+## Start the build
+
+Run expo build:android or expo build:ios.
+
+```bash
+expo build:android
+```
+
+```bash
+expo build:ios
+```
