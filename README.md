@@ -119,7 +119,7 @@ I'll go with 1242 pixels wide and 2436 pixels tall -- this is the width of the i
 
 ## Start the build
 
-Run expo build:android or expo build:ios.
+### Run expo build:android or expo build:ios.
 
 ```bash
 expo build:android
@@ -128,3 +128,19 @@ expo build:android
 ```bash
 expo build:ios
 ```
+
+
+
+### build for Android (APK or Android App Bundle)
+APK
+
+```bash
+expo build:android -t apk
+```
+
+Android App Bundle
+
+```bash
+expo build:android -t app-bundle
+```
+
