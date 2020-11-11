@@ -4,7 +4,7 @@
     "slug": "animalface",
     "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/appIcon_V2.2.png",
+    "icon": "./assets/appIcon_V3.2.png",
     "splash": {
       "image": "./assets/splash_image_V1.2.png",
       "resizeMode": "contain",
@@ -23,7 +23,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/appIcon_V2.2.png",
+        "foregroundImage": "./assets/appIcon_V3.2.png",
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.wookingwoo.animalface",
