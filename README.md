@@ -144,3 +144,11 @@ Android App Bundle
 expo build:android -t app-bundle
 ```
 
+## keystore 관리
+
+Backup keystore and credentials 
+
+```bash
+expo fetch:android:keystore
+```
+
