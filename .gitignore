@@ -1,3 +1,5 @@
+.idea
+
 data/*
 crawler/selenium/crawling_data/*
 crawler/test_img/*
